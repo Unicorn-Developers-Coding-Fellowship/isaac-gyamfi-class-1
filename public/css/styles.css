@@ -1,0 +1,23 @@
+html, body {
+    font-family: 'Playfair Display', serif !important;
+}
+.staff-img {
+    height: 200px;
+    width: 200px;
+}
+
+.category-item {
+    height: 400px;
+    width: auto;
+}
+
+.service-icon {
+    font-size: 72px;
+    background-color: bisque;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
