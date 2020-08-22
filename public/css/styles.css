@@ -1,9 +1,74 @@
 html, body {
     font-family: 'Playfair Display', serif !important;
 }
+
+nav {
+    background-color: rgba(255, 228, 196, 0.5);
+}
+
+nav li a {
+    color: rgb(161, 92, 42);
+    /* font-weight: bold; */
+    font-size: 20px;
+    border-top: 5px solid transparent;
+}
+
+nav li a:hover {
+    border-top: 5px solid rgb(161, 92, 42);
+    color: rgb(161, 92, 42);
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000
+}
+
+.navbar-brand:hover {
+    color: #000000;
+}
+
+section {
+    padding-top: 20px;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url(../assets/pexels-thijs-van-der-weide-1094770.jpg);
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .message {
+    max-width: 450px;
+    font-weight: bold;
+    color: bisque;
+    margin-bottom: 20px;
+}
+
+.btn3 {
+    border: 2px solid bisque;
+    color: bisque;
+}
+
+.btn3:hover {
+    color: #0f0f00;
+    background-color: bisque;
+}
+
+.dealer-form {
+    max-width:380px;
+    background-color: rgba(255, 228, 196, 0.7);
+}
+
 .staff-img {
     height: 200px;
     width: 200px;
+}
+
+.staff p {
+    font-size: 15px;
 }
 
 .category-item {
@@ -19,5 +84,5 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    align-self: center;
 }

@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unicorn Furniture | The Best in Furniture</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="public/css/styles.css" />
@@ -17,7 +25,7 @@
   <body>
     <!-- The page header containing the navigation bar -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="#">Unicorn Furniture</a>
         <button
           class="navbar-toggler"
@@ -34,10 +42,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">Categories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Locations</a>
             </li>
           </ul>
           <div>
@@ -50,13 +64,70 @@
 
     <main>
       <!-- landing image -->
-      <section></section>
+      <section class="hero-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="message">
+                <h1>
+                  From the finest wood, we build the best furniture you love
+                </h1>
+              </div>
+              <div>
+                <button class="btn btn3">Build your own</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="dealer-form p-4">
+                <h3>Find a dealer</h3>
+                <hr />
+                <form action="/">
+                  <div class="form-group">
+                    <label for="">Select your country</label>
+                    <select name="country" id="country" class="form-control">
+                      <option selected disabled></option>
+                      <option value="Ghana">Ghana</option>
+                      <option value="US">US</option>
+                      <option value="Germany">Germany</option>
+                      <option value="France">France</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Select your city</label>
+                    <select name="city" id="city" class="form-control">
+                      <option selected disabled></option>
+                      <option value="Accra">Accra</option>
+                      <option value="Detroit">Detroit</option>
+                      <option value="Bronx">Bronx</option>
+                      <option value="Berlin">Berlin</option>
+                      <option value="Hamburg">Hamburg</option>
+                      <option value="Paris">Paris</option>
+                    </select>
+                  </div>
+                  <!-- <div class="form-group">
+                    <label for="">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                    />
+                  </div> -->
+                  <div class="form-group">
+                    <button class="btn btn-secondary">Search</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- gallery -->
       <section class="container"></section>
       <!-- category -->
       <section class="container">
-        <h4 class="text-center">Types of furniture<h4>
-        <hr>
+        <h4 class="text-center">Types of furniture</h4>
+        <hr />
         <div class="row">
           <div class="col-md-6 category-item">
             <div>
@@ -83,7 +154,7 @@
             <div>
               <img
                 class="img-fluid rounded"
-                src="public/assets/pexels-pixabay-279614.jpg"
+                src="public/assets/pexels-mark-mccammon-1080721.jpg"
                 alt=""
                 srcset=""
               />
@@ -93,7 +164,7 @@
             <div>
               <img
                 class="img-fluid rounded"
-                src="public/assets/pexels-mark-mccammon-1080721.jpg"
+                src="public/assets/pexels-jonathan-borba-3316918.jpg"
                 alt=""
                 srcset=""
               />
@@ -103,41 +174,41 @@
       </section>
       <!-- services -->
       <section class="container">
-        <h4 class="text-center">What we offer our clients<h4>
-        <hr>
+        <h4 class="text-center">What we offer our clients</h4>
+        <hr />
         <div class="row">
-            <div class="col-md-3">
-                <h4 class="service-icon rounded-circle">
-                    <i class="fa fa-truck" aria-hidden="true"></i>
-                </h4>
-                <h6 class="text-center">Delivery</h6>
-            </div>
-            <div class="col-md-3">
-                <h4 class="service-icon rounded-circle">
-                <i class="fa fa-envira" aria-hidden="true"></i>               
+          <div class="col-md-3 d-flex flex-column align-self-center">
+            <h4 class="service-icon rounded-circle">
+              <i class="fa fa-truck" aria-hidden="true"></i>
             </h4>
-            <h6>Interior Design</h6>
-            </div>
-            <div class="col-md-3">
-                <h4 class="service-icon rounded-circle">
-                    <i class="fa fa-table" aria-hidden="true"></i>
-                </h4>
-                <h6 class="text-center">Customer data</h6>
-            </div>
-            <div class="col-md-3">
-                <h4  class="service-icon rounded-circle">
-                    <i class="fa fa-truck" aria-hidden="true"></i>
-                </h4>
-                <h6 class="text-center">Home decor</h6>
-            </div>
+            <h6 class="text-center">Delivery</h6>
+          </div>
+          <div class="col-md-3 d-flex flex-column align-self-center">
+            <h4 class="service-icon rounded-circle">
+              <i class="fa fa-envira" aria-hidden="true"></i>
+            </h4>
+            <h6 class="text-center">Interior Design</h6>
+          </div>
+          <div class="col-md-3 d-flex flex-column align-self-center">
+            <h4 class="service-icon rounded-circle">
+              <i class="fa fa-table" aria-hidden="true"></i>
+            </h4>
+            <h6 class="text-center">Customer data</h6>
+          </div>
+          <div class="col-md-3 d-flex flex-column align-self-center">
+            <h4 class="service-icon rounded-circle">
+              <i class="fa fa-truck" aria-hidden="true"></i>
+            </h4>
+            <h6 class="text-center">Home decor</h6>
+          </div>
         </div>
       </section>
       <!-- staff -->
       <section class="container">
-        <h4 class="text-center">Meet the team<h4>
-        <hr>
+        <h4 class="text-center">Meet the team</h4>
+        <hr />
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex flex-column align-self-center">
             <div class="staff">
               <img
                 class="img-fluid staff-img rounded-circle"
@@ -153,7 +224,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex flex-column align-self-center">
             <div class="staff">
               <img
                 class="img-fluid staff-img rounded-circle"
@@ -169,7 +240,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex flex-column align-self-center">
             <div class="staff">
               <img
                 class="img-fluid staff-img rounded-circle"
@@ -185,7 +256,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex flex-column align-self-center">
             <div class="staff">
               <img
                 class="img-fluid staff-img rounded-circle"
@@ -219,7 +290,7 @@
     ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4 class="text-center"AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
   </body>
